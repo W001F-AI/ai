@@ -107,8 +107,7 @@ export default function Home() {
 
   const calculateShippingTotal = () => {
     const cost = parseFloat(shippingCost) || 0;
-    const tax = cost * 0.3;
-    return (cost + tax).toFixed(2);
+    return (cost * 0.7).toFixed(2);
   };
 
   return (
@@ -315,30 +314,30 @@ export default function Home() {
 
           <div className="bg-slate-800/80 backdrop-blur rounded-2xl p-8 border border-blue-500/30">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <span className="text-3xl">🚚</span>
-              حاسبة الشحن
+              <span className="text-3xl">📱</span>
+              حاسبة شحن الرصيد
             </h2>
-            <p className="text-slate-400 mb-4">ضريبة الشحن 30%</p>
+            <p className="text-slate-400 mb-4">ضريبة 30% تخصم من المبلغ المشحون</p>
             
             <div className="space-y-4">
               <div>
-                <label className="text-slate-300 block mb-2">تكلفة الشحن (جنيه)</label>
+                <label className="text-slate-300 block mb-2">المبلغ المراد شحنه (جنيه)</label>
                 <input
                   type="number"
                   value={shippingCost}
                   onChange={(e) => setShippingCost(e.target.value)}
-                  placeholder="أدخل تكلفة الشحن"
+                  placeholder="أدخل المبلغ"
                   className="w-full bg-slate-700 border border-slate-600 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-blue-500/20 rounded-xl p-4 text-center">
+                <div className="bg-red-500/20 rounded-xl p-4 text-center">
                   <div className="text-slate-400 text-sm">الضريبة (30%)</div>
-                  <div className="text-2xl font-bold text-blue-500">{calculateShippingTax()} جنيه</div>
+                  <div className="text-2xl font-bold text-red-500">{calculateShippingTax()} جنيه</div>
                 </div>
                 <div className="bg-green-500/20 rounded-xl p-4 text-center">
-                  <div className="text-slate-400 text-sm">الإجمالي</div>
+                  <div className="text-slate-400 text-sm">الرصيد المستلم</div>
                   <div className="text-2xl font-bold text-green-500">{calculateShippingTotal()} جنيه</div>
                 </div>
               </div>
