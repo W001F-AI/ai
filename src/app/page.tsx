@@ -190,54 +190,118 @@ export default function Home() {
 
       <section className="container mx-auto px-4 py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
-          <span className="text-orange-500">الخدمات</span> الإضافية
+          <span className="text-orange-500">المميزات</span> الإضافية
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-          <div className="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-orange-500/20">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-8 border border-orange-500/30 hover:border-orange-400 transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-white text-2xl">📱</span>
               </div>
-              <h3 className="text-xl font-bold text-white">برنامج التقسيط</h3>
+              <div>
+                <h3 className="text-xl font-bold text-white">برنامج التقسيط</h3>
+                <p className="text-orange-400 text-sm">Device Installment</p>
+              </div>
             </div>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> حتى 15,000 جنيه ل Premier 450</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> حتى 20,000 جنيه ل Premier 600</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> حتى 30,000 جنيه ل Premier 750</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> حتى 40,000 جنيه ل Premier 1050</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> حتى 100,000 جنيه ل Premier 1500</li>
-            </ul>
+            <div className="space-y-3">
+              <div className="flex justify-between items-center bg-slate-900/50 rounded-lg p-3">
+                <span className="text-slate-300">PREMIER 450</span>
+                <span className="text-orange-500 font-bold">15,000 ج.م</span>
+              </div>
+              <div className="flex justify-between items-center bg-slate-900/50 rounded-lg p-3">
+                <span className="text-slate-300">PREMIER 600</span>
+                <span className="text-orange-500 font-bold">20,000 ج.م</span>
+              </div>
+              <div className="flex justify-between items-center bg-slate-900/50 rounded-lg p-3">
+                <span className="text-slate-300">PREMIER 750</span>
+                <span className="text-orange-500 font-bold">30,000 ج.م</span>
+              </div>
+              <div className="flex justify-between items-center bg-slate-900/50 rounded-lg p-3">
+                <span className="text-slate-300">PREMIER 1050</span>
+                <span className="text-orange-500 font-bold">40,000 ج.م</span>
+              </div>
+              <div className="flex justify-between items-center bg-slate-900/50 rounded-lg p-3">
+                <span className="text-slate-300">PREMIER 1500</span>
+                <span className="text-orange-500 font-bold">100,000 ج.م</span>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-orange-500/20">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-8 border border-orange-500/30 hover:border-orange-400 transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-white text-2xl">🏠</span>
               </div>
-              <h3 className="text-xl font-bold text-white">خصومات المنزل</h3>
+              <div>
+                <h3 className="text-xl font-bold text-white">خصومات الإنترنت</h3>
+                <p className="text-orange-400 text-sm">Home Discounts</p>
+              </div>
             </div>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> Home DSL بخصم حتى 420 جنيه</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> Home Wireless بخصم حتى 350 جنيه</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> راوتر 5G بسعر 2,499 جنيه</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> صالح لمشتركي Premier</li>
-            </ul>
+            <div className="space-y-4">
+              <div>
+                <p className="text-slate-400 text-sm mb-2">Home DSL</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="bg-slate-900/50 rounded-lg p-2 text-center">
+                    <span className="text-slate-400 text-xs">450 - 600</span>
+                    <p className="text-orange-500 font-bold">190-210 ج.م</p>
+                  </div>
+                  <div className="bg-slate-900/50 rounded-lg p-2 text-center">
+                    <span className="text-slate-400 text-xs">750 - 1050</span>
+                    <p className="text-orange-500 font-bold">210-290 ج.م</p>
+                  </div>
+                  <div className="bg-slate-900/50 rounded-lg p-2 text-center">
+                    <span className="text-slate-400 text-xs">1500</span>
+                    <p className="text-orange-500 font-bold">420 ج.م</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p className="text-slate-400 text-sm mb-2">Home Wireless 5G</p>
+                <div className="bg-slate-900/50 rounded-lg p-3 text-center">
+                  <p className="text-white font-bold">راوتر 5G</p>
+                  <p className="text-green-500 font-bold">2,499 ج.م</p>
+                  <p className="text-slate-500 text-xs line-through">5,499 ج.م</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-orange-500/20">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-8 border border-orange-500/30 hover:border-orange-400 transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-white text-2xl">✈️</span>
               </div>
-              <h3 className="text-xl font-bold text-white">سفر وإ roaming</h3>
+              <div>
+                <h3 className="text-xl font-bold text-white">السفر و Roaming</h3>
+                <p className="text-orange-400 text-sm">Travel Benefits</p>
+              </div>
             </div>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> حتى 10 جيجابايت Data Roaming</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> حتى 60 دقيقة دولية</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> Roaming تلقائي بـ 350 جنيه</li>
-              <li className="flex items-center gap-2"><span className="text-orange-500">▸</span> خدمة 50 جنيه / شهر أثناء السفر</li>
-            </ul>
+            <div className="space-y-4">
+              <div className="bg-slate-900/50 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-2xl">📡</span>
+                  <span className="text-white font-semibold">Data Roaming</span>
+                </div>
+                <p className="text-orange-500 font-bold">حتى 10 جيجابايت / سنة</p>
+                <p className="text-slate-500 text-xs">م selon الباقة</p>
+              </div>
+              <div className="bg-slate-900/50 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-2xl">🌍</span>
+                  <span className="text-white font-semibold">دقائق دولية</span>
+                </div>
+                <p className="text-orange-500 font-bold">حتى 60 دقيقة</p>
+              </div>
+              <div className="bg-slate-900/50 rounded-lg p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-2xl">🔄</span>
+                  <span className="text-white font-semibold">Auto Roaming</span>
+                </div>
+                <p className="text-orange-500 font-bold">350 ج.م / شهر</p>
+                <p className="text-slate-500 text-xs">+ 50 ج.م خدمة</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
