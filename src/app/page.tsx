@@ -103,7 +103,7 @@ function LandingPage({ onEnter }: { onEnter: () => void }) {
         </div>
 
         <h1 className="text-6xl md:text-8xl font-black mb-4 tracking-wider text-center">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">ORANGE</span> PREMIER
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">ORANGE</span> <span className="text-white">PREMIER</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-300 mb-8">أحسن نظام شهري في مصر</p>
@@ -169,7 +169,7 @@ export default function Home() {
               <img src="https://assets.kiloapps.io/user_861d0470-6a59-4d61-a9d4-a32ef783b166/63e0d3d2-ed9e-490c-95a6-597d51929f08/89645a7f-07c2-47b9-a5ed-885892a75242.png" alt="Orange Logo" className="w-full h-full object-contain drop-shadow-lg" />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide">
-              <span className="text-orange-500">Orange</span> PREMIER
+              <span className="text-orange-500">Orange</span> <span className="text-white">PREMIER</span>
             </h1>
           </div>
           <p className="text-center text-orange-100 mt-2 text-base">أحسن نظام شهري في مصر</p>
