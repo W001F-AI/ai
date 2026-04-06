@@ -284,7 +284,7 @@ export default function Home() {
                   <span className="text-white font-semibold">Data Roaming</span>
                 </div>
                 <p className="text-orange-500 font-bold">حتى 10 جيجابايت / سنة</p>
-                <p className="text-slate-500 text-xs">م selon الباقة</p>
+                <p className="text-slate-500 text-xs">حسب الباقة</p>
               </div>
               <div className="bg-slate-900/50 rounded-lg p-4">
                 <div className="flex items-center gap-2 mb-2">
