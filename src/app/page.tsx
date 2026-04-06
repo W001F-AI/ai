@@ -106,7 +106,11 @@ function LandingPage({ onEnter }: { onEnter: () => void }) {
           <span className="text-white">ORANGE</span> <span className="text-white">PREMIER</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-slate-300 mb-8">أحسن نظام شهري في مصر</p>
+        <p className="text-xl md:text-2xl text-slate-300 mb-4">أحسن نظام شهري في مصر</p>
+        
+        <p className="text-white text-lg font-bold flex items-center justify-center gap-2 mb-8">
+          Mohamed issa 🐺
+        </p>
 
         <button
           onClick={onEnter}
