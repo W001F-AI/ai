@@ -102,18 +102,11 @@ function LandingPage({ onEnter }: { onEnter: () => void }) {
           </div>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-black text-white mb-4 tracking-wider flex items-center justify-center gap-6">
-          <span className="flex items-center gap-3">
-            <svg className="w-16 h-16 text-orange-500" viewBox="0 0 48 48" fill="currentColor">
-              <circle cx="24" cy="24" r="20" fill="#FF6600"/>
-              <text x="24" y="32" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">O</text>
-            </svg>
-            ORANGE
-          </span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PREMIER</span>
+        <h1 className="text-6xl md:text-8xl font-black text-white mb-4 tracking-wider text-center">
+          ORANGE <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PREMIER</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-slate-300 mb-8">أحسن نظام شهري في مصر 2026</p>
+        <p className="text-xl md:text-2xl text-slate-300 mb-8">أحسن نظام شهري في مصر</p>
 
         <button
           onClick={onEnter}
@@ -172,14 +165,14 @@ export default function Home() {
       <header className="bg-gradient-to-r from-orange-500 to-orange-600 py-6 shadow-2xl sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-4">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-orange-600 text-2xl font-bold">O</span>
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+              <img src="https://assets.kiloapps.io/user_861d0470-6a59-4d61-a9d4-a32ef783b166/63e0d3d2-ed9e-490c-95a6-597d51929f08/89645a7f-07c2-47b9-a5ed-885892a75242.png" alt="Orange Logo" className="w-full h-full object-contain drop-shadow-lg" />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide">
               Orange <span className="text-orange-200">PREMIER</span>
             </h1>
           </div>
-          <p className="text-center text-orange-100 mt-2 text-base">أحسن نظام شهري في مصر 2026</p>
+          <p className="text-center text-orange-100 mt-2 text-base">أحسن نظام شهري في مصر</p>
         </div>
       </header>
 
