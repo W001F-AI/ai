@@ -102,12 +102,18 @@ function LandingPage({ onEnter }: { onEnter: () => void }) {
           </div>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-black text-white mb-4 tracking-wider">
-          ORANGE <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PREMIER</span>
+        <h1 className="text-6xl md:text-8xl font-black text-white mb-4 tracking-wider flex items-center justify-center gap-6">
+          <span className="flex items-center gap-3">
+            <svg className="w-16 h-16 text-orange-500" viewBox="0 0 48 48" fill="currentColor">
+              <circle cx="24" cy="24" r="20" fill="#FF6600"/>
+              <text x="24" y="32" textAnchor="middle" fill="white" fontSize="24" fontWeight="bold">O</text>
+            </svg>
+            ORANGE
+          </span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PREMIER</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-slate-300 mb-4">أفضل أنظمة الدفع الآجل في مصر</p>
-        <p className="text-lg text-orange-400 mb-12 font-semibold">مجانية كاملة مع أحدث العروض 2026</p>
+        <p className="text-xl md:text-2xl text-slate-300 mb-8">أفضل أنظمة الدفع الآجل في مصر</p>
 
         <button
           onClick={onEnter}
