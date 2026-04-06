@@ -96,9 +96,9 @@ function LandingPage({ onEnter }: { onEnter: () => void }) {
       </div>
 
       <div className="relative z-10 text-center px-4">
-        <div className="mb-8 animate-bounce">
-          <div className="w-32 h-32 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto shadow-2xl shadow-orange-500/50">
-            <span className="text-white text-6xl font-bold">O</span>
+        <div className="mb-8 animate-pulse">
+          <div className="w-32 h-32 flex items-center justify-center mx-auto">
+            <img src="https://assets.kiloapps.io/user_861d0470-6a59-4d61-a9d4-a32ef783b166/63e0d3d2-ed9e-490c-95a6-597d51929f08/89645a7f-07c2-47b9-a5ed-885892a75242.png" alt="Orange Logo" className="w-full h-full object-contain drop-shadow-lg" />
           </div>
         </div>
 
@@ -113,7 +113,7 @@ function LandingPage({ onEnter }: { onEnter: () => void }) {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PREMIER</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-slate-300 mb-8">أفضل أنظمة الدفع الآجل في مصر 2026</p>
+        <p className="text-xl md:text-2xl text-slate-300 mb-8">أحسن نظام شهري في مصر 2026</p>
 
         <button
           onClick={onEnter}
@@ -179,7 +179,7 @@ export default function Home() {
               Orange <span className="text-orange-200">PREMIER</span>
             </h1>
           </div>
-          <p className="text-center text-orange-100 mt-2 text-base">أفضل أنظمة الدفع الآجل في مصر 2026 2026</p>
+          <p className="text-center text-orange-100 mt-2 text-base">أحسن نظام شهري في مصر 2026</p>
         </div>
       </header>
 
