@@ -86,7 +86,54 @@ const premierPlans = [
   },
 ];
 
+function LandingPage({ onEnter }: { onEnter: () => void }) {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-600/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="relative z-10 text-center px-4">
+        <div className="mb-8 animate-bounce">
+          <div className="w-32 h-32 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto shadow-2xl shadow-orange-500/50">
+            <span className="text-white text-6xl font-bold">O</span>
+          </div>
+        </div>
+
+        <h1 className="text-6xl md:text-8xl font-black text-white mb-4 tracking-wider">
+          ORANGE <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PREMIER</span>
+        </h1>
+
+        <p className="text-xl md:text-2xl text-slate-300 mb-4">أفضل أنظمة الدفع الآجل في مصر</p>
+        <p className="text-lg text-orange-400 mb-12 font-semibold">مجانية كاملة مع أحدث العروض 2026</p>
+
+        <button
+          onClick={onEnter}
+          className="group relative px-12 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xl font-bold rounded-full shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 transform hover:scale-105 transition-all duration-300 overflow-hidden"
+        >
+          <span className="relative z-10 flex items-center gap-3">
+            ابدأ الآن
+            <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </span>
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </button>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+        <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
+        <div className="w-2 h-2 bg-orange-500/50 rounded-full animate-pulse delay-75"></div>
+        <div className="w-2 h-2 bg-orange-500/30 rounded-full animate-pulse delay-150"></div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
+  const [showMain, setShowMain] = useState(false);
   const [billAmount, setBillAmount] = useState("");
   const [shippingCost, setShippingCost] = useState("");
 
@@ -110,19 +157,23 @@ export default function Home() {
     return (cost * 0.7).toFixed(2);
   };
 
+  if (!showMain) {
+    return <LandingPage onEnter={() => setShowMain(true)} />;
+  }
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      <header className="bg-gradient-to-r from-orange-500 to-orange-600 py-6 shadow-2xl">
+      <header className="bg-gradient-to-r from-orange-500 to-orange-600 py-6 shadow-2xl sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-4">
-            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-orange-600 text-3xl font-bold">O</span>
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-orange-600 text-2xl font-bold">O</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white tracking-wide">
+            <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide">
               Orange <span className="text-orange-200">PREMIER</span>
             </h1>
           </div>
-          <p className="text-center text-orange-100 mt-3 text-lg">أفضل أنظمة الدفع الآجل في مصر 2026</p>
+          <p className="text-center text-orange-100 mt-2 text-base">أفضل أنظمة الدفع الآجل في مصر 2026</p>
         </div>
       </header>
 
