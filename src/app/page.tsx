@@ -113,7 +113,7 @@ function LandingPage({ onEnter }: { onEnter: () => void }) {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PREMIER</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-slate-300 mb-8">أفضل أنظمة الدفع الآجل في مصر</p>
+        <p className="text-xl md:text-2xl text-slate-300 mb-8">أفضل أنظمة الدفع الآجل في مصر 2026</p>
 
         <button
           onClick={onEnter}
@@ -179,7 +179,7 @@ export default function Home() {
               Orange <span className="text-orange-200">PREMIER</span>
             </h1>
           </div>
-          <p className="text-center text-orange-100 mt-2 text-base">أفضل أنظمة الدفع الآجل في مصر 2026</p>
+          <p className="text-center text-orange-100 mt-2 text-base">أفضل أنظمة الدفع الآجل في مصر 2026 2026</p>
         </div>
       </header>
 
