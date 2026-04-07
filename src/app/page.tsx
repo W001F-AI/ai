@@ -142,12 +142,12 @@ export default function Home() {
 
   const calculateTax = () => {
     const amount = parseFloat(billAmount) || 0;
-    return (amount * 0.14).toFixed(2);
+    return (amount * 0.355).toFixed(2);
   };
 
   const calculateTotal = () => {
     const amount = parseFloat(billAmount) || 0;
-    return (amount * 1.14).toFixed(2);
+    return (amount * 1.355).toFixed(2);
   };
 
   const calculateShippingTax = () => {
@@ -415,7 +415,7 @@ export default function Home() {
               <span className="text-2xl sm:text-3xl">🧾</span>
               حاسبة الضريبة الشهرية
             </h2>
-            <p className="text-slate-400 mb-3 sm:mb-4 text-sm sm:text-base">ضريبة القيمة المضافة 14%</p>
+            <p className="text-slate-400 mb-3 sm:mb-4 text-sm sm:text-base">ضريبة القيمة المضافة 23% + 12.5%</p>
             
             <div className="space-y-3 sm:space-y-4">
               <div>
@@ -431,7 +431,7 @@ export default function Home() {
 
               <div className="grid grid-cols-2 gap-2 sm:gap-4">
                 <div className="bg-orange-500/20 rounded-lg sm:rounded-xl p-3 sm:p-4 text-center">
-                  <div className="text-slate-400 text-xs sm:text-sm">الضريبة (14%)</div>
+                  <div className="text-slate-400 text-xs sm:text-sm">الضريبة (23% + 12.5%)</div>
                   <div className="text-xl sm:text-2xl font-bold text-orange-500">{calculateTax()} ج.م</div>
                 </div>
                 <div className="bg-green-500/20 rounded-lg sm:rounded-xl p-3 sm:p-4 text-center">
