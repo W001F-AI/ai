@@ -167,7 +167,7 @@ export default function Home() {
           <div className="flex items-center gap-3 sm:gap-4">
             <a href="https://www.orange.eg/ar/myaccount/login?ReturnUrl=/ar/myaccount/" className="text-white font-semibold text-xs sm:text-sm hover:text-orange-400 transition">حسابي</a>
             <a href="https://www.orange.eg/ar/contact-us" className="text-white font-semibold text-xs sm:text-sm hover:text-orange-400 transition">مساعده</a>
-            <span className="text-orange-500 font-bold text-xs sm:text-sm">E-Shop</span>
+            <a href="https://eshop.orange.eg/ar" className="text-orange-500 font-bold text-xs sm:text-sm hover:text-orange-400 transition">E-Shop</a>
           </div>
         </nav>
         <LandingPage onEnter={() => setShowMain(true)} />
