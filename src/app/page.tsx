@@ -161,7 +161,18 @@ export default function Home() {
   };
 
   if (!showMain) {
-    return <LandingPage onEnter={() => setShowMain(true)} />;
+    return (
+      <>
+        <nav className="absolute top-0 left-0 right-0 z-50 px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <span className="text-white font-semibold text-xs sm:text-sm">حسابي</span>
+            <span className="text-white font-semibold text-xs sm:text-sm">مساعده</span>
+            <span className="text-orange-500 font-bold text-xs sm:text-sm">E-Shop</span>
+          </div>
+        </nav>
+        <LandingPage onEnter={() => setShowMain(true)} />
+      </>
+    );
   }
 
   return (
