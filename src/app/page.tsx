@@ -166,7 +166,7 @@ export default function Home() {
         <nav className="absolute top-0 left-0 right-0 z-50 px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3 sm:gap-4">
             <a href="https://www.orange.eg/ar/myaccount/login?ReturnUrl=/ar/myaccount/" className="text-white font-semibold text-xs sm:text-sm hover:text-orange-400 transition">حسابي</a>
-            <span className="text-white font-semibold text-xs sm:text-sm">مساعده</span>
+            <a href="https://www.orange.eg/ar/contact-us" className="text-white font-semibold text-xs sm:text-sm hover:text-orange-400 transition">مساعده</a>
             <span className="text-orange-500 font-bold text-xs sm:text-sm">E-Shop</span>
           </div>
         </nav>
